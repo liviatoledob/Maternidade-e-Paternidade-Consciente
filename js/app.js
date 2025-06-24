@@ -4,6 +4,7 @@ let state = {
     p: document.getElementById("text-flavia"),
     url: document.getElementById("img-flavia"),
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     embaixadores: document.getElementById("embaixadores"),
     carousel: document.getElementById("carousel"),
     posts: document.getElementById("posts-cards"),
@@ -53,6 +54,8 @@ if(state.posts){
     carregarposts()
 }
 =======
+=======
+>>>>>>> Stashed changes
 }
 
 function carregar() {
@@ -64,5 +67,9 @@ function carregar() {
 }
 
 
+<<<<<<< Updated upstream
+carregar()
+>>>>>>> Stashed changes
+=======
 carregar()
 >>>>>>> Stashed changes
