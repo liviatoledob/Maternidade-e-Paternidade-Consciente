@@ -3,6 +3,7 @@
 let state = {
     p: document.getElementById("text-flavia"),
     url: document.getElementById("img-flavia"),
+<<<<<<< Updated upstream
     embaixadores: document.getElementById("embaixadores"),
     carousel: document.getElementById("carousel"),
     posts: document.getElementById("posts-cards"),
@@ -51,3 +52,17 @@ if(state.embaixadores){
 if(state.posts){
     carregarposts()
 }
+=======
+}
+
+function carregar() {
+    console.log(frasesMotivacionais[0].frase);
+    console.log(catalogoFilmesSeries[1].imagem);
+    state.p.textContent = frasesMotivacionais[0].frase;
+    state.url.src = catalogoFilmesSeries[1].imagem;
+
+}
+
+
+carregar()
+>>>>>>> Stashed changes
