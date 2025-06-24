@@ -203,7 +203,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(6, 1fr);
-  
+
 }
 
 .div1 {
@@ -387,14 +387,36 @@ footer {
   background-color: #e0f3cb;
 }
 
-/*POSTS FIM*/      
+/*POSTS FIM*/
 
-    /*CONTATO COMEÇO*/
-  .btn-light {
-      background-color: #3d899c;
-      color: white;
-    }
-    .btn-light:hover {
-      background-color: #3d899c;
-    }
-     /*CONTATO FIM*/
+/*CONTATO COMEÇO*/
+.btn-light {
+  background-color: #3d899c;
+  color: white;
+}
+
+.btn-light:hover {
+  background-color: #3d899c;
+}
+
+/*CONTATO FIM*/
+
+/*NOSSA EMPRESA COMEÇO*/
+.icon-box {
+  text-align: center;
+  padding: 120px;
+  border-radius: 10px;
+  background-color: #3d6217;
+}
+
+.icon-box img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+  .image-side {
+    margin-top: 20px;
+  }
+}
+/*NOSSA EMPRESA FIM*/
