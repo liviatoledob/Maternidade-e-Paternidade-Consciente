@@ -390,12 +390,11 @@ footer {
 /*POSTS FIM*/      
 
     /*CONTATO COMEÇO*/
-    .linha-verde {
-      width: 90px;
-      height: 5px;
-      background-color: #3d6217;
-      margin-bottom: 1rem;
+  .btn-light {
+      background-color: #3d899c;
+      color: white;
     }
-
-
-    
+    .btn-light:hover {
+      background-color: #3d899c;
+    }
+     /*CONTATO FIM*/

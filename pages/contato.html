@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Posts</title>
+    <title>Contato | Cegonha à Caminho</title>
 
     <!--BOOTSTRAP CSS-->
 
@@ -23,7 +23,7 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
                 aria-controls="offcanvasWithBothOptions">
-                <img src="img/logo1.png" alt="logo" width="100" height="100">
+                <img src="../img/logo1.png" alt="logo" width="100" height="100">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -56,68 +56,57 @@
     <!-- Fim Navbar -->
 
 
-<!-- SEÇÃO 1 -->
-  <section>
-    <h1 class="titulo-secao">Contate-nos</h1><!--PEGAR TITULO DO TITULOS.JS-->
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti possimus dolorum ducimus minima dolores consequuntur iure pariatur voluptas similique aliquam, recusandae quo dolor accusamus ratione molestias quod non consequatur repellat impedit? Esse.</p> <!--INSERIR PARÁGRAFO DO ARRAY-->
-    <button class="btn-relato" data-bs-toggle="modal" data-bs-target="#modalContato">MANDE SEU RELATO</button>
+<!-- TÍTULO -->
+  <section class="container my-5">
+    <h2 class="fw-bold border-start border-5 ps-3 border-success">CONTATE-NOS</h2><!--TITULO ARRAYS TITULOS.JS-->
+    <p class="mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, repudiandae ipsam? Delectus dolor velit adipisci omnis animi ipsum dolorum iure ad totam, sed tempore! Quaerat esse similique numquam totam molestias dolores libero.</p><!--PARAGRAFO DO ARRAY-->
+
+    <!-- BOTÃO QUE ABRE O MODAL -->
+    <div class="text-center my-4">
+      <button class="btn btn-light btn-lg px-4 py-2 fw-bold" data-bs-toggle="modal" data-bs-target="#modalRelato">
+        MANDE SEU RELATO
+      </button>
+    </div>
   </section>
 
-  <!-- MODAL COM FORMULÁRIO-->
-  <div class="modal fade" id="modalContato" tabindex="-1" aria-hidden="true">
+  <!-- MODAL DE FORMULÁRIO -->
+  <div class="modal fade" id="modalRelato" tabindex="-1" aria-labelledby="modalRelatoLabel" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content p-4">
-        <form id="formContato">
-          <div class="mb-3">
-            <label class="form-label fw-bold" for="nome">Nome:</label>
-            <input type="text" class="form-control" id="nome" required>
+      <div class="modal-content">
+        <form>
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold" id="modalRelatoLabel">Envie seu relato</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
           </div>
-          <div class="mb-3">
-            <label class="form-label fw-bold" for="email">Email:</label>
-            <input type="email" class="form-control" id="email" required>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="nome" class="form-label fw-semibold">Nome:</label>
+              <input type="text" class="form-control" id="nome" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label fw-semibold">Email:</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="relato" class="form-label fw-semibold">Relato:</label>
+              <textarea class="form-control" id="relato" rows="4" required></textarea>
+            </div>
           </div>
-          <div class="mb-3">
-            <label class="form-label fw-bold" for="relato">Relato:</label>
-            <textarea class="form-control" id="relato" rows="4" required></textarea>
-          </div>
-          <div class="d-flex justify-content-end gap-2">
+          <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-            <button type="submit" class="btn btn-info text-white">Enviar</button>
+            <button type="submit" class="btn btn-light" onclick="enviarFormulario(event)">Enviar</button>
           </div>
         </form>
       </div>
     </div>
   </div>
 
-  <!-- Alerta de confirmação -->
-  <div id="feedback" class="alert alert-primary alerta" role="alert">
-    Obrigada pelo seu contato! Assim que possível, retornaremos o feedback.
-  </div>
 
- <!-- SEÇÃO 01 -->
-    <section class="container my-4">
-        <h1 class="titulo-relatos">QUER SER NOSSO PARCEIRO?</h1>
-        <div class="linha-verde d-flex align-items-center"></div>
-        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore animi asperiores
-            repellat. Consequatur id autem debitis delectus totam eum. Architecto, totam eaque cupiditate ducimus
-            debitis consequuntur nam velit, facere, nisi vitae magnam?</p>
-            <h5 class="text-center">liviatoledo123@email.com</h5>
-            <div class="p-5"></div>
-    </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <section class="container my-5">
+    <h2 class="fw-bold border-start border-5 ps-3 border-success">QUER SER NOSSO PARCEIRO?</h2><!--TITULO ARRAY TITULOS.JS-->
+    <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, illum magni! Dicta, molestiae sequi sunt eos deserunt eligendi praesentium laboriosam! Quisquam quos ullam sapiente saepe atque facere tempore consequatur recusandae minus sit?</p><!--PARAGRAFO ARRAY-->
+    <h5 class="text-center fw-bold">liviatoledo123@email.com</h5><!--EMAIL ARRAY-->
+    <div class="p-5"></div>
 
     <!-- Início Footer -->
     <footer class="p-5">
