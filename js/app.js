@@ -12,6 +12,14 @@ let state = {
   pNossaEmpresa_valores: document.getElementById("sec_03-valores"),
   pNossaEmpresa_historia: document.getElementById("sec_02-historia"),
   pNossaEmpresa_empresa: document.getElementById("sec01_nossa-empresa"),
+  //Pag Relatos
+  relatos: document.getElementById("relatos"),
+  relato1: document.getElementById("relato1"),
+  relato2: document.getElementById("relato2"),
+  relato3: document.getElementById("relato3"),
+  autor1: document.getElementById("autor1"),
+  autor2: document.getElementById("autor2"),
+  autor3: document.getElementById("autor3"),
 }
 
 let stateNossaEmpresa = {
@@ -68,12 +76,38 @@ function carregarNossaEmpresa() {
 
 }
 
+function carregarRelatos() {
+  for (let i = 0; i < frasesMotivacionais.length; i++) {
+    state.relatos.innerHTML = `${poemas[i].texto}`
+
+    if (i == 0) {
+      state.relato1.innerHTML = `"${frasesMotivacionais[i].frase}"`
+      state.autor1.innerHTML = `${frasesMotivacionais[i].autor}`
+    } else if (i == 1) {
+      state.relato2.innerHTML = `"${frasesMotivacionais[i].frase}"`
+      state.autor2.innerHTML = `${frasesMotivacionais[i].autor}`
+    } else {
+      state.relato3.innerHTML = `"${frasesMotivacionais[i].frase}"`
+      state.autor3.innerHTML = `${frasesMotivacionais[i].autor}`
+
+    }
+
+
+
+    console.log(i)
+  }
+}
+
 if (state.embaixadores) {
   carregar()
 }
 
 if (state.pNossaEmpresa_missao && state.pNossaEmpresa_historia) {
   carregarNossaEmpresa()
+}
+
+if (state.relatos) {
+  carregarRelatos()
 }
 
 
