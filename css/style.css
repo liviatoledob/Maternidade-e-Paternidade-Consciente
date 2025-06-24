@@ -387,4 +387,15 @@ footer {
   background-color: #e0f3cb;
 }
 
-/*POSTS FIM*/
+/*POSTS FIM*/      
+
+    /*CONTATO COMEÇO*/
+    .linha-verde {
+      width: 90px;
+      height: 5px;
+      background-color: #3d6217;
+      margin-bottom: 1rem;
+    }
+
+
+    
