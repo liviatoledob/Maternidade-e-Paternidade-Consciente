@@ -327,3 +327,26 @@ footer {
       margin: 0 0.5rem;
     }
     /*EMBAIXADORES FIM*/
+
+    /*POSTS COMEÇO*/
+  
+    .barra-verde {
+    width: 5px;
+  height: 30px;
+  background-color: #3d6217; 
+}
+
+
+.titulo-postagens {
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+
+    .bg-lightgreen {
+    background-color: #e0f3cb;
+    }
+
+    /*POSTS FIM*/
