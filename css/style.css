@@ -4,6 +4,20 @@ body {
   min-height: 100vh;
 }
 
+/* .testeimagem{
+  border: 2px solid red ;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 100%;
+} */
+
+.anuncio-lateral{
+  
+  height: 100%;
+  text-align: center;
+}
+
 /*Início Navbar*/
 .navbar {
   background: #ffffff;
