@@ -11,10 +11,45 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
     <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="shortcut icon" href="../img/logo2.png" type="image/x-icon">
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+                aria-controls="offcanvasWithBothOptions">
+                <img src="../img/logo1.png" alt="logo" width="100" height="100">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
+
+                <form class="d-flex ms-auto position-relative my-1" role="search">
+
+                    <div class="input-group">
+                        <input class="form-control nav_pesquisar" type="search" placeholder="Search" aria-label="Search"
+                            style="border-right: none;" />
+                        <div class="input-group-append">
+                            <div class="input-group-text"
+                                style="color: black; border-radius: 0 25px 25px 0; background-color: white;"><i
+                                    class="bi bi-search"></i>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </form>
+
+
+            </div>
+        </div>
+    </nav>
     <!-- SEÇÃO 01 -->
     <section class="container">
         <h1 class="titulo-relatos">RELATOS</h1>
@@ -143,8 +178,29 @@
         </div>
     </footer>
 
+    <!-- Início Offcanvas -->
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Maternidade & Parentalidade Consciente</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            
+            <a href="../index.html" class="d-block mb-2"><strong>HOME</strong></a>
+            <a href="nossaempresa.html" class="d-block mb-2"><strong>SOBRE NÓS</strong></a>
+            <a href="posts.html" class="d-block mb-2"><strong>POSTS</strong></a>
+            <a href="relatos.html" class="d-block mb-2"><strong>RELATOS</strong></a>
+            <a href="produtos.html" class="d-block mb-2"><strong>PRODUTOS</strong></a>
+            <a href="embaixadores.html" class="d-block mb-2"><strong>EMBAIXADORES</strong></a>
+            <a href="contato.html" class="d-block mb-2"><strong>CONTATO</strong></a>
+        </div>
+    </div>
+    <!-- Fim Offcanvas -->
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
@@ -159,9 +215,11 @@
 
 
 
-    
+
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
 
 <script src="db/dados.js"></script>
 <script src="db/titulos.js"></script>
