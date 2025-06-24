@@ -2,249 +2,160 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Posts</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Posts</title>
 
-    <!--BOOTSTRAP CSS-->
+  <!--BOOTSTRAP CSS-->
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 
-    <!--BOOTSTRAP ICON-->
+  <!--BOOTSTRAP ICON-->
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-    <!--LINK CSS-->
+  <!--LINK CSS-->
 
-    <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-    <!-- Início Navbar -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
-                aria-controls="offcanvasWithBothOptions">
-                <img src="../img/logo1.png" alt="logo" width="100" height="100">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <!-- Início Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+        aria-controls="offcanvasWithBothOptions">
+        <img src="../img/logo1.png" alt="logo" width="100" height="100">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
 
-                <form class="d-flex ms-auto position-relative my-1" role="search">
+        <form class="d-flex ms-auto position-relative my-1" role="search">
 
-                    <div class="input-group">
-                        <input class="form-control nav_pesquisar" type="search" placeholder="Search" aria-label="Search"
-                            style="border-right: none;" />
-                        <div class="input-group-append">
-                            <div class="input-group-text"
-                                style="color: black; border-radius: 0 25px 25px 0; background-color: white;"><i
-                                    class="bi bi-search"></i>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </form>
-
-
+          <div class="input-group">
+            <input class="form-control nav_pesquisar" type="search" placeholder="Search" aria-label="Search"
+              style="border-right: none;" />
+            <div class="input-group-append">
+              <div class="input-group-text"
+                style="color: black; border-radius: 0 25px 25px 0; background-color: white;"><i
+                  class="bi bi-search"></i>
+              </div>
             </div>
-        </div>
-    </nav>
-    <!-- Fim Navbar -->
+          </div>
 
-    <!--SEÇÃO 1-->
-    <div class="container my-4">
-  <div class="d-flex align-items-center">
-    <div class="barra-verde me-2"></div>
-    <h2 class="titulo-postagens">Postagens</h2>
+
+        </form>
+
+
+      </div>
+    </div>
+  </nav>
+  <!-- Fim Navbar -->
+
+  <!--SEÇÃO 1-->
+  <div class="container my-4">
+    <div class="d-flex align-items-center">
+      <div class="barra-verde me-2"></div>
+      <h2 class="titulo-postagens">Postagens</h2>
+    </div>
   </div>
-</div>
 
-    <!-- SEÇÃO POSTAGENS COM FUNDO CLARO -->
-<div class="container-fluid bg-lightgreen py-4">
-  <div class="container">
+  <!-- SEÇÃO POSTAGENS COM FUNDO CLARO -->
+  <div class="container-fluid bg-lightgreen py-4">
+    <div class="container">
+      <div class="row">
+        <!-- COLUNA PRINCIPAL DE CARDS -->
+        <div class="col-lg-8">
+          <div class="d-flex flex-wrap justify-content-start gap-3" id="posts-cards">
+
+            
+
+          </div>
+        </div>
+
+        <!-- COLUNA ANÚNCIO -->
+        <div class="col-lg-4 mt-4 mt-lg-0 ">
+          <img src="https://picsum.photos/100/800" class="img-fluid rounded"
+            alt="Anúncio lateral"><!--IMAGEM INFELIZ QUE SÓ FUNCIONA QUANDO QUER QUE PRECISAMOS TROCAR PRO ARRAY-->
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Início Footer -->
+  <footer class="p-5">
     <div class="row">
-      <!-- COLUNA PRINCIPAL DE CARDS -->
-      <div class="col-lg-8">
-        <div class="d-flex flex-wrap justify-content-start gap-3">
-
-          <!-- CARD 1 -->
-          <div class="card" style="width: 18rem;">
-            <img src="https://picsum.photos/200" class="card-img-top" alt="Imagem card"><!--PEGAR IMAGEM DO ARRAY-->
-            <div class="card-body">
-              <small>00.00.00</small><!--PEGAR DATA DO ARRAY-->
-              <h6 class="card-title fw-bold mt-2">AS FÉRIAS ESTÃO CHEGANDO: ideias para entreter as crianças</h6><!--ISSO É UM TÍTULO OU NÃO É? NÃO SEI, MAS PRECISA PEGAR DO ARRAY DADOS OU TITULOS-->
-              <p class="card-text small">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos delectus adipisci unde perferendis, minus reprehenderit atque eius accusamus optio consequuntur veritatis?</p><!--PEGAR PARÁGRAFO DO ARRAY-->
-              <a href="#" class="btn btn-light btn-sm">Ver artigo &gt;</a>
-            </div>
-          </div>
-
-          <!-- CARD 2 -->
-          <div class="card" style="width: 18rem;">
-            <img src="https://picsum.photos/200" class="card-img-top" alt="Imagem card"><!--PEGAR IMAGEM DO ARRAY-->
-            <div class="card-body">
-              <small>00.00.00</small><!--PEGAR DATA DO ARRAY-->
-              <h6 class="card-title fw-bold mt-2">PATERNIDADE ATIVA: prefeitura de Pelotas sanciona lei municipal</h6><!--ISSO É UM TÍTULO OU NÃO É? NÃO SEI, MAS PRECISA PEGAR DO ARRAY DADOS OU TITULOS-->
-              <p class="card-text small">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias unde repudiandae, quaerat nihil, aut rem id quae autem qui vel voluptates!</p><!--PEGAR PARÁGRAFO DO ARRAY-->
-              <a href="#" class="btn btn-light btn-sm">Ver artigo &gt;</a>
-            </div>
-          </div>
-
-          <!-- CARD 3 -->
-          <div class="card" style="width: 18rem;">
-            <img src="https://picsum.photos/200" class="card-img-top" alt="Imagem card"><!--PEGAR IMAGEM DO ARRAY-->
-            <div class="card-body">
-              <small>00.00.00</small><!--PEGAR DATA DO ARRAY-->
-              <h6 class="card-title fw-bold mt-2">BONS X RUINS: desenhos infantis recomendados para crianças</h6><!--ISSO É UM TÍTULO OU NÃO É? NÃO SEI, MAS PRECISA PEGAR DO ARRAY DADOS OU TITULOS-->
-              <p class="card-text small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui officia officiis, eligendi a minus libero, aliquam, dolore provident eaque cum nesciunt!</p><!--PEGAR PARÁGRAFO DO ARRAY-->
-              <a href="#" class="btn btn-light btn-sm">Ver artigo &gt;</a>
-            </div>
-          </div>
-
-          <!-- CARD 4 -->
-          <div class="card" style="width: 18rem;">
-            <img src="https://picsum.photos/200" class="card-img-top" alt="Imagem card"><!--PEGAR IMAGEM DO ARRAY-->
-            <div class="card-body">
-              <small>00.00.00</small><!--PEGAR DATA DO ARRAY-->
-              <h6 class="card-title fw-bold mt-2">USO DAS TELAS: impacto na estimulação infantil</h6><!--ISSO É UM TÍTULO OU NÃO É? NÃO SEI, MAS PRECISA PEGAR DO ARRAY DADOS OU TITULOS-->
-              <p class="card-text small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sit recusandae labore illo porro rerum error eligendi, consequuntur, dolores repellendus maxime.</p><!--PEGAR PARÁGRAFO DO ARRAY-->
-              <a href="#" class="btn btn-light btn-sm">Ver artigo &gt;</a>
-            </div>
-          </div>
-
-          <!-- CARD 5 -->
-          <div class="card" style="width: 18rem;">
-            <img src="https://picsum.photos/200" class="card-img-top" alt="Imagem card"><!--PEGAR IMAGEM DO ARRAY-->
-            <div class="card-body">
-              <small>00.00.00</small><!--PEGAR DATA DO ARRAY-->
-              <h6 class="card-title fw-bold mt-2">INTELIGÊNCIA ARTIFICIAL: o ChatGPT degradando com a educação brasileira</h6><!--ISSO É UM TÍTULO OU NÃO É? NÃO SEI, MAS PRECISA PEGAR DO ARRAY DADOS OU TITULOS-->
-              <p class="card-text small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptas optio nobis molestiae cupiditate voluptatem maxime ipsam, nostrum, aliquid obcaecati quo!</p><!--PEGAR PARÁGRAFO DO ARRAY-->
-              <a href="#" class="btn btn-light btn-sm">Ver artigo &gt;</a>
-            </div>
-          </div>
-
-          <!-- CARD 6 -->
-          <div class="card" style="width: 18rem;">
-            <img src="https://picsum.photos/200" class="card-img-top" alt="Imagem card"><!--PEGAR IMAGEM DO ARRAY-->
-            <div class="card-body">
-              <small>00.00.00</small><!--PEGAR DATA DO ARRAY-->
-              <h6 class="card-title fw-bold mt-2">EXPOSIÇÃO INFANTIL NA INTERNET: postar sobre seu filho é realmente necessário?</h6><!--ISSO É UM TÍTULO OU NÃO É? NÃO SEI, MAS PRECISA PEGAR DO ARRAY DADOS OU TITULOS-->
-              <p class="card-text small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, esse cumque culpa neque dicta error porro sapiente alias earum sed veniam.</p><!--PEGAR PARÁGRAFO DO ARRAY-->
-              <a href="#" class="btn btn-light btn-sm">Ver artigo &gt;</a>
-            </div>
-          </div>
-
-          <!-- CARD 7 -->
-          <div class="card" style="width: 18rem;">
-            <img src="https://picsum.photos/200" class="card-img-top" alt="Imagem card"><!--PEGAR IMAGEM DO ARRAY-->
-            <div class="card-body">
-              <small>00.00.00</small><!--PEGAR DATA DO ARRAY-->
-              <h6 class="card-title fw-bold mt-2">DOAÇÃO DE ROUPAS E BRINQUEDOS: saiba como ajudar outras mamães  </h6><!--ISSO É UM TÍTULO OU NÃO É? NÃO SEI, MAS PRECISA PEGAR DO ARRAY DADOS OU TITULOS-->
-              <p class="card-text small">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente nulla earum harum rem doloribus voluptatem reprehenderit quidem cupiditate, nesciunt neque nisi!</p><!--PEGAR PARÁGRAFO DO ARRAY-->
-              <a href="#" class="btn btn-light btn-sm">Ver artigo &gt;</a>
-            </div>
-          </div>
-
-           <!-- CARD 8 -->
-          <div class="card" style="width: 18rem;">
-            <img src="https://picsum.photos/200" class="card-img-top" alt="Imagem card"><!--PEGAR IMAGEM DO ARRAY-->
-            <div class="card-body">
-              <small>00.00.00</small><!--PEGAR DATA DO ARRAY-->
-              <h6 class="card-title fw-bold mt-2">ADOLESCÊNCIA: série da Netflix traz alerta sobre “incel”, redes e suas ameaças </h6><!--ISSO É UM TÍTULO OU NÃO É? NÃO SEI, MAS PRECISA PEGAR DO ARRAY DADOS OU TITULOS-->
-              <p class="card-text small">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente nulla earum harum rem doloribus voluptatem reprehenderit quidem cupiditate, nesciunt neque nisi!</p><!--PEGAR PARÁGRAFO DO ARRAY-->
-              <a href="#" class="btn btn-light btn-sm">Ver artigo &gt;</a>
-            </div>
-          </div>
-
+      <div class="col-sm-6">
+        <h4 class="footer-titulo"><strong>NOS SIGA EM NOSSAS REDES SOCIAIS</strong></h4>
+        <div class="footer-icons">
+          <i class="bi bi-instagram mx-3"></i>
+          <i class="bi bi-youtube mx-3"></i>
+          <i class="bi bi-pinterest mx-3"></i>
         </div>
       </div>
-
-      <!-- COLUNA ANÚNCIO -->
-      <div class="col-lg-4 mt-4 mt-lg-0 ">
-        <img src="https://picsum.photos/100/800" class="img-fluid rounded" alt="Anúncio lateral"><!--IMAGEM INFELIZ QUE SÓ FUNCIONA QUANDO QUER QUE PRECISAMOS TROCAR PRO ARRAY-->
+      <div class="col-sm-6">
+        <p class="footer-texto">Todos os direitos reservados. 2025 ©<br>
+          Cegonha à Caminho por Livia e Wallace</p>
       </div>
+    </div>
+  </footer>
+  <!-- Fim Footer -->
+
+
+
+  <!-- Início Offcanvas -->
+  <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+    aria-labelledby="offcanvasWithBothOptionsLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Maternidade & Parentalidade
+        Consciente</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+
+      <a href="" class="d-block mb-2"><strong>HOME</strong></a>
+      <a href="" class="d-block mb-2"><strong>SOBRE NÓS</strong></a>
+      <a href="" class="d-block mb-2"><strong>POSTS</strong></a>
+      <a href="" class="d-block mb-2"><strong>RELATOS</strong></a>
+      <a href="" class="d-block mb-2"><strong>PRODUTOS</strong></a>
+      <a href="" class="d-block mb-2"><strong>EMBAIXADORES</strong></a>
+      <a href="" class="d-block mb-2"><strong>CONTATO</strong></a>
     </div>
   </div>
-</div>
+  <!-- Fim Offcanvas -->
 
 
 
-    <!-- Início Footer -->
-    <footer class="p-5">
-        <div class="row">
-            <div class="col-sm-6">
-                <h4 class="footer-titulo"><strong>NOS SIGA EM NOSSAS REDES SOCIAIS</strong></h4>
-                <div class="footer-icons">
-                    <i class="bi bi-instagram mx-3"></i>
-                    <i class="bi bi-youtube mx-3"></i>
-                    <i class="bi bi-pinterest mx-3"></i>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <p class="footer-texto">Todos os direitos reservados. 2025 ©<br>
-                    Cegonha à Caminho por Livia e Wallace</p>
-            </div>
-        </div>
-    </footer>
-    <!-- Fim Footer -->
-
-
-
-    <!-- Início Offcanvas -->
-    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
-        aria-labelledby="offcanvasWithBothOptionsLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Maternidade & Parentalidade
-                Consciente</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-
-            <a href="" class="d-block mb-2"><strong>HOME</strong></a>
-            <a href="" class="d-block mb-2"><strong>SOBRE NÓS</strong></a>
-            <a href="" class="d-block mb-2"><strong>POSTS</strong></a>
-            <a href="" class="d-block mb-2"><strong>RELATOS</strong></a>
-            <a href="" class="d-block mb-2"><strong>PRODUTOS</strong></a>
-            <a href="" class="d-block mb-2"><strong>EMBAIXADORES</strong></a>
-            <a href="" class="d-block mb-2"><strong>CONTATO</strong></a>
-        </div>
-    </div>
-    <!-- Fim Offcanvas -->
-
-
-
-    <!-- JS Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-        crossorigin="anonymous"></script>
-
-</body>
-</main>
-
-
-
-
-
-
-
-
-
-
-
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+  <!-- JS Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
     crossorigin="anonymous"></script>
 
-<script src="db/dados.js"></script>
-<script src="db/titulos.js"></script>
+  <script src="/db/dados.js"></script>
+  <script src="/db/titulos.js"></script>
 
-<script src="js/app.js"></script>
+  <script src="/js/app.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
 
 </html>
