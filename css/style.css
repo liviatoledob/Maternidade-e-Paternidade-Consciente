@@ -48,9 +48,10 @@ body {
 /*Fim Navbar*/
 
 /* Início Header */
-.img-carousel {
-  height: 80vh;
-}
+  #carrosselindex {
+    object-fit: cover;
+  }
+
 
 /* @media (max-width: 375px) {
     .img-carousel {
