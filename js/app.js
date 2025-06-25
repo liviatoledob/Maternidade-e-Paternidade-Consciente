@@ -37,9 +37,14 @@ let state = {
   parceiro3: document.getElementById("parceiro3"),
   parceiro4: document.getElementById("parceiro4"),
   parceiro5: document.getElementById("parceiro5"),
-  card_produtos: document.getElementById("card-produtos")
+  card_produtos: document.getElementById("card-produtos"),
   //Pág. Home
-
+  sec01_p1: document.getElementById("sec01-p1"),
+  sec01_p2: document.getElementById("sec01-p2"),
+  sec01_p3: document.getElementById("sec01-p3"),
+  sec01_cards: document.getElementById("sec01-cards"),
+  sec01_img: document.getElementById("sec01-img"),
+  mais_acessados: document.getElementById("mais-acessados"),
 }
 
 let stateNossaEmpresa = {
@@ -165,6 +170,39 @@ function carregarContatos() {
 
   }
 
+}
+
+function carregarHome(){
+  for(let i = 0; i < artigos.length; i++){
+    state.sec01_p1.innerHTML = `${artigos[i].paragrafo02}`
+    state.sec01_p2.innerHTML = `${artigos[i].paragrafo03}`
+    state.sec01_p3.innerHTML = `${artigos[i].paragrafo01}`
+    console.log(artigos[i].paragrafo01);
+    
+  }
+  for (let i = 0; i < 2; i++) {
+    state.sec01_cards.innerHTML += `<div class="col-12 col-md-6">
+              <div class="card h-100">
+                <img src="${catalogoFilmesSeries[i].imagem}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">${noticias[i].titulo}</h5>
+                  <p class="card-text">${noticias[i].resumo}</p>
+                </div>
+              </div>
+            </div>`
+    
+  }
+  for(let i = 0; i < 6; i++){
+    state.sec01_img.innerHTML = `<img src="${catalogoFilmesSeries[i].imagem}" alt="Anúncio" class="img-fluid">`
+    state.mais_acessados.innerHTML += `<div class="col-12 col-sm-6 col-md-4">
+          <img src="${eventos[i].imagem}" alt="" class="img-fluid mb-2">
+          <h6>${eventos[i].nome}</h6>
+        </div>`
+  }
+}
+
+if(state.sec01_p1){
+  carregarHome()
 }
 
 if (state.embaixadores) {

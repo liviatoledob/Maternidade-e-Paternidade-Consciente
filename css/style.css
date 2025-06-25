@@ -4,6 +4,10 @@ body {
   min-height: 100vh;
 }
 
+#sec01-img{
+  height: 100%;
+}
+
 /* .testeimagem{
   border: 2px solid red ;
   justify-content: center;
