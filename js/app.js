@@ -20,6 +20,26 @@ let state = {
   autor1: document.getElementById("autor1"),
   autor2: document.getElementById("autor2"),
   autor3: document.getElementById("autor3"),
+  //Pág. Contatos
+  contate_nos: document.getElementById("contate-nos"),
+  parceria: document.getElementById("parceria"),
+  btnEnviar: document.getElementById('btnEnviar'),
+  //Pág. Produtos
+  produtos: document.getElementById("produtos"),
+  produtos_card1: document.getElementById("produtos-card1"),
+  produtos_card2: document.getElementById("produtos-card2"),
+  produtos_card3: document.getElementById("produtos-card3"),
+  produtos_card4: document.getElementById("produtos-card4"),
+  produtos_card5: document.getElementById("produtos-card5"),
+  produtos_card6: document.getElementById("produtos-card6"),
+  parceiro1: document.getElementById("parceiro1"),
+  parceiro2: document.getElementById("parceiro2"),
+  parceiro3: document.getElementById("parceiro3"),
+  parceiro4: document.getElementById("parceiro4"),
+  parceiro5: document.getElementById("parceiro5"),
+  card_produtos: document.getElementById("card-produtos")
+  //Pág. Home
+
 }
 
 let stateNossaEmpresa = {
@@ -98,6 +118,55 @@ function carregarRelatos() {
   }
 }
 
+function carregarProdutos() {
+  for (let i = 0; i < 10; i++) {
+    state.produtos.innerHTML = `${poemas[i].texto}`
+    if (i == 0) {
+      
+      state.parceiro1.innerHTML = `<img src="${poemas[i].imagem}" class="rounded-circle mb-2 img-fluid" alt="Babysec">`
+    }else if(i==1){
+      
+      state.parceiro2.innerHTML = `<img src="${poemas[i].imagem}" class="rounded-circle mb-2 img-fluid" alt="Logo Little Duck">`
+    }else if(i==2){
+      
+      state.parceiro3.innerHTML = `<img src="${poemas[i].imagem}" class="rounded-circle mb-2 img-fluid" alt="Logo Ted Boom">`
+    }else if(i==3){
+      
+      state.parceiro4.innerHTML = `<img src="${poemas[i].imagem}" class="rounded-circle mb-2 img-fluid" alt="Logo Aliexpress">`
+    }else if(i==4){
+      
+      state.parceiro5.innerHTML = `<img src="${poemas[i].imagem}" class="rounded-circle mb-2 img-fluid" alt="Logo Kiddo">`
+    }
+
+  }
+
+  for(let i = 0; i < 6; i++){
+    state.card_produtos.innerHTML += `<div class="col-md-6 col-xl-4">
+            <div class="card h-100">
+              <img src="${catalogoFilmesSeries[i].imagem}" class="card-img-top" alt="Imagem 1">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">${artigos[i].titulo}
+                </h5><!--PEGAR TITULO DO TITULOS.JS-->
+                <p class="card-text" id="produtos-card1">${artigos[i].paragrafo01}</p>
+                <!--PEGAR PARÁGRAFO DO ARRAY-->
+                <a href="#" class="text-dark fw-bold">LEIA ARTIGO ></a>
+              </div>
+            </div>
+          </div>`
+  }
+}
+
+function carregarContatos() {
+  for (let i = 0; i < 6; i++) {
+    state.contate_nos.innerHTML = `${artigos[i].paragrafo03}`;
+    state.parceria.innerHTML = `${artigos[i].paragrafo01}`;
+    console.log(artigos[i].paragrafo03);
+
+
+  }
+
+}
+
 if (state.embaixadores) {
   carregar()
 }
@@ -108,6 +177,14 @@ if (state.pNossaEmpresa_missao && state.pNossaEmpresa_historia) {
 
 if (state.relatos) {
   carregarRelatos()
+}
+
+if (state.contate_nos) {
+  carregarContatos()
+}
+
+if (state.produtos) {
+  carregarProdutos()
 }
 
 

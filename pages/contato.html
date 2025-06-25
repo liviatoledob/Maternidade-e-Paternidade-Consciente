@@ -65,9 +65,7 @@
     <!-- TÍTULO -->
     <section class="container my-5">
         <h2 class="fw-bold border-start border-5 ps-3 border-success">CONTATE-NOS</h2><!--TITULO ARRAYS TITULOS.JS-->
-        <p class="mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, repudiandae ipsam? Delectus
-            dolor velit adipisci omnis animi ipsum dolorum iure ad totam, sed tempore! Quaerat esse similique numquam
-            totam molestias dolores libero.</p><!--PARAGRAFO DO ARRAY-->
+        <p class="mt-3" id="contate-nos"></p><!--PARAGRAFO DO ARRAY-->
 
         <!-- BOTÃO QUE ABRE O MODAL -->
         <div class="text-center my-4">
@@ -77,6 +75,7 @@
         </div>
     </section>
 
+    <div id="liveAlertPlaceholder"></div>
     <!-- MODAL DE FORMULÁRIO -->
     <div class="modal fade" id="modalRelato" tabindex="-1" aria-labelledby="modalRelatoLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -102,7 +101,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                        <button type="submit" class="btn btn-light" onclick="enviarFormulario(event)">Enviar</button>
+                        <button type="button" class="btn btn-light" id="liveAlertBtn">Enviar</button>
                     </div>
                 </form>
             </div>
@@ -113,9 +112,7 @@
     <section class="container my-5">
         <h2 class="fw-bold border-start border-5 ps-3 border-success">QUER SER NOSSO PARCEIRO?</h2>
         <!--TITULO ARRAY TITULOS.JS-->
-        <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, illum magni! Dicta,
-            molestiae sequi sunt eos deserunt eligendi praesentium laboriosam! Quisquam quos ullam sapiente saepe atque
-            facere tempore consequatur recusandae minus sit?</p><!--PARAGRAFO ARRAY-->
+        <p class="mt-3" id="parceria"></p><!--PARAGRAFO ARRAY-->
         <h5 class="text-center fw-bold">liviatoledo123@email.com</h5><!--EMAIL ARRAY-->
         <div class="p-5"></div>
     </section>
@@ -169,10 +166,31 @@
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
 
-    <script src="db/dados.js"></script>
-    <script src="db/titulos.js"></script>
+    <script src="../db/dados.js"></script>
+    <script src="../db/titulos.js"></script>
 
-    <script src="js/app.js"></script>
+    <script src="../js/app.js"></script>
+    <script>
+        const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+        const appendAlert = (message, type) => {
+            const wrapper = document.createElement('div')
+            wrapper.innerHTML = [
+                `<div class="alert alert-${type} alert-dismissible fade show" role="alert">`,
+                `   <div>${message}</div>`,
+                '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+                '</div>'
+            ].join('')
+
+            alertPlaceholder.append(wrapper)
+        }
+
+        const alertTrigger = document.getElementById('liveAlertBtn')
+        if (alertTrigger) {
+            alertTrigger.addEventListener('click', () => {
+                appendAlert('Formulário enviado com sucesso!', 'success')
+            })
+        }
+    </script>
 
 </body>
 
