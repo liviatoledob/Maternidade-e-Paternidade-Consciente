@@ -8,14 +8,6 @@ body {
   height: 100%;
 }
 
-/* .testeimagem{
-  border: 2px solid red ;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  height: 100%;
-} */
-
 .anuncio-lateral{
   
   height: 100%;
@@ -56,12 +48,6 @@ body {
     object-fit: cover;
   }
 
-
-/* @media (max-width: 375px) {
-    .img-carousel {
-        height: 400px;
-    }
-} */
 .teste02 {
 
   border-right: 2px solid black;
